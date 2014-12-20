@@ -8,8 +8,20 @@
 ## (x=matrix ()) and save it as an object that is a cache-able matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-
+        m<-NULL
+        set<-function(y){
+        x<<-y
+        m<<-NULL
 }
+        get<-function() x
+        setmatrix<-function(solve) m<<- solve
+        getmatrix<-function() m
+        list(set=set, get=get,
+        setmatrix=setmatrix,
+        getmatrix=getmatrix)
+}
+
+
 
 
 ## This function identifies with there is a solution for the function
