@@ -4,14 +4,17 @@
 ## allowing the function to save computing time by retrieving the 
 ## cached inverse if it is available
 
-## Write a short comment describing this function
+## This function allows the user to create a defined matrix
+## (x=matrix ()) and save it as an object that is a cache-able matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 
 }
 
 
-## Write a short comment describing this function
+## This function identifies with there is a solution for the function
+## solve already cached for the defined cache-able matrix created by
+## makeCacheMatrix. If not, the function runs Solve for the cache-able matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
